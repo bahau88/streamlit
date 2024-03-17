@@ -20,7 +20,11 @@ st.markdown("_Prototype v0.4.1_")
 
 with st.sidebar:
     st.header("Configuration")
-    uploaded_file = st.file_uploader("Choose a file")
+    st.markdown("Download the source file:")
+    st.markdown("[Financial Data Clean.xlsx](https://github.com/bahau88/streamlit/raw/main/Financial%20Data%20Clean.xlsx)")
+
+file_url = "https://github.com/bahau88/streamlit/raw/main/Financial%20Data%20Clean.xlsx"
+
 
 if uploaded_file is None:
     st.info(" Upload a file through config", icon="ℹ️")
